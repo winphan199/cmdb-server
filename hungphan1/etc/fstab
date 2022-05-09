@@ -1,0 +1,6 @@
+LABEL=cloudimg-rootfs	/	 ext4	defaults	0 1
+LABEL=UEFI	/boot/efi	vfat	umask=0077	0 1
+/dev/vdb	/mnt	auto	defaults,nofail,x-systemd.requires=cloud-init.service,comment=cloudconfig	0	2
+192.168.1.33:/var/nfs/general    /nfs/general   nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+192.168.1.33:/home               /nfs/home      nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+192.168.1.33:/tips               /nfs/tips      nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0

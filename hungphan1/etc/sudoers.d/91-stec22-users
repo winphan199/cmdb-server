@@ -1,0 +1,6 @@
+# Created by cloud-init v. 21.4-0ubuntu1~20.04.1 on Sun, 20 Mar 2022 19:47:22 +0000
+
+# User rules for ubuntu
+#hungphan ALL=(ALL) NOPASSWD:ALL
+hungphan ALL=(ALL) ALL
+sam22 ALL=(ALL) NOPASSWD:/usr/sbin/ufw
